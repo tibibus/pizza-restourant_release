@@ -1,0 +1,59 @@
+#header_p{
+    font-family: 'Julee';
+    font-weight: 400;
+    font-size: 64px;
+    margin-left:50px;
+}
+#title{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1440px;
+}
+#logo{
+    position: absolute;
+    width: 215px;
+    height: 215px;
+    left: 45%;
+    top: 250px;
+    border-radius: 28px;
+}
+#title_bg{
+    z-index: -1;
+    width: 131%;
+}
+#p1{
+    position: absolute;
+    width: 230px;
+    height: 34px;
+    left: 44.5%;
+    top: 500px;
+    font-family: 'Alumni Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+#p2{
+    position: absolute;
+    width: 572px;
+    height: 38px;
+    left: 37%;
+    top: 630px;
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    background-color: black;
+    border:2px solid white;
+}
+.outline{
+    box-sizing: border-box;
+    width: 48.58px;
+    height: 49px;
+    border: 1px solid #A6A6A6;
+    border-radius: 25px;
+}
