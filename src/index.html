@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Days+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <p id="header_p">GIGA PIZZA</p>
+    </header>
+    <main>
+        <div id="title">
+            <img id="title_bg" src="img/title_bg.png">
+            <img id="logo" src="img/logo.png">
+            <p id="p1">Працюємо щоденно</p>
+            <p id="p2">Замовлення приймаємо з 10⁰⁰ до 23⁰⁰</p>
+        </div>
+        <div id="constructor">
+            <p id="p3">Конструктор піци:</p>
+            <p id="p4">Унікальна пропозиція – створіть піцу на свій смак.У Вас є можливість замовити бажані інгредієнти для піци за власним унікальним рецептом.Розкажіть про це друзям!</p>
+            <div id="options">
+                <div id="size">
+                    <p id="p5">Розмір піци:</p>
+                    <input id="check1" type="radio" name="size" checked>
+                    <label id="label1" for="check1">Ø30 см, 129 грн</label>
+                    <input id="check2" type="radio" name="size">
+                    <label id="label2" for="check2">Ø40 см, 210 грн</label>
+                </div>
+                <div id="souses">
+                    <p id="p6">Основа:</p>
+                    <input id="check3" type="radio" name="sauce" checked>
+                    <label id="label3" for="check3">соус томатний</label>
+                    <input id="check4" type="radio" name="sauce">
+                    <label id="label4" for="check4">соус томатний гострий</label>
+                    <input id="check5" type="radio" name="sauce">
+                    <label id="label5" for="check5">соус вершковий</label>
+                </div>
+            </div>
+            <div>
+                <p id="price">Ціна:</p>
+                <button id="reset_ingredients">Скинути інгредієнти</button>
+            </div>
+            <p id="ingredient_list">інгрідієнти:</p>
+            <div id="ingredients">
+                <p id="p7">Інгредієнти:</p>
+                <div id="cheeses">
+                    <p id="p8">Сири</p>
+                    <div class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/mozzarella.png">
+                        <p class="ingredient_name">сир моцарела</p>
+                        <p class="ingredient_price">30 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="ch2" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/king_cheese.png">
+                        <p class="ingredient_name">сир королівський</p>
+                        <p class="ingredient_price">34 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="ch3" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/feta_cheese.png">
+                        <p class="ingredient_name">сир фета</p>
+                        <p class="ingredient_price">34 грн</p>
+                        <p class="ingredient_weight">40 гр</p>
+                    </div>
+                    <div id="ch4" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/dorblue_cheese.png">
+                        <p class="ingredient_name">сир дорблю</p>
+                        <p class="ingredient_price">34 грн</p>
+                        <p class="ingredient_weight">20 гр</p>
+                    </div>
+                    <div id="ch5" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/mascarpone.png">
+                        <p class="ingredient_name">сир маскарпоне</p>
+                        <p class="ingredient_price">34 грн</p>
+                        <p class="ingredient_weight">40 гр</p>
+                    </div>
+                    <div id="ch6" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/parmezan.png">
+                        <p class="ingredient_name">сир пармезан</p>
+                        <p class="ingredient_price">34 грн</p>
+                        <p class="ingredient_weight">20 гр</p>
+                    </div>
+                    <div id="ch7" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/brynza.png">
+                        <p class="ingredient_name">сир бринза</p>
+                        <p class="ingredient_price">34 грн</p>
+                        <p class="ingredient_weight">40 гр</p>
+                    </div>
+                </div>
+                <div id="meat_and_fish">
+                    <p id="p9">М'ясо та риба</p>
+                    <div id="m1" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/shynka_king.png">
+                        <p class="ingredient_name">шинка королівська</p>
+                        <p class="ingredient_price">32 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="m2" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/proshuto.png">
+                        <p class="ingredient_name">прошуто</p>
+                        <p class="ingredient_price">60 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="m3" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/shovdar.png">
+                        <p class="ingredient_name">шовдарь</p>
+                        <p class="ingredient_price">40 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="m4" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/bacon.png">
+                        <p class="ingredient_name">бекон</p>
+                        <p class="ingredient_price">32 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="m5" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/bavarian.png">
+                        <p class="ingredient_name">салямі баварська</p>
+                        <p class="ingredient_price">32 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="m6" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/spicy_salami.png">
+                        <p class="ingredient_name">салямі чорізо (гостра)</p>
+                        <p class="ingredient_price">50 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="m7" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/spicy_salami_pepperoni.png">
+                        <p class="ingredient_name">салямі пепероні (гостра)</p>
+                        <p class="ingredient_price">40 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="m8" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/myslivski.png">
+                        <p class="ingredient_name">мисливські ковбаски</p>
+                        <p class="ingredient_price">32 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="m9" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/piknytsa.png">
+                        <p class="ingredient_name">пікниця</p>
+                        <p class="ingredient_price">40 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="m10" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/marynated_chicken.png">
+                        <p class="ingredient_name">курка маринована</p>
+                        <p class="ingredient_price">34 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="m11" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/steam_cooked_chicken.png">
+                        <p class="ingredient_name">курка копчена</p>
+                        <p class="ingredient_price">34 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="m12" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/cari_chicken_spicy.png">
+                        <p class="ingredient_name">курка карі (гостра)</p>
+                        <p class="ingredient_price">34 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="m13" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/small_eggs.png">
+                        <p class="ingredient_name">яйця перепелині</p>
+                        <p class="ingredient_price">32 грн</p>
+                        <p class="ingredient_weight">40 гр</p>
+                    </div>
+                    <div id="m14" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/marynated_pig.png">
+                        <p class="ingredient_name">свинина маринована</p>
+                        <p class="ingredient_price">40 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="m15" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/salmon_conserv.png">
+                        <p class="ingredient_name">тунець консервований</p>
+                        <p class="ingredient_price">62 грн</p>
+                        <p class="ingredient_weight">65 гр</p>
+                    </div>
+                    <div id="m16" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/salmon_salty.png">
+                        <p class="ingredient_name">лосось слабосолений</p>
+                        <p class="ingredient_price">92 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="m17" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/seafood.png">
+                        <p class="ingredient_name">морепродукти</p>
+                        <p class="ingredient_price">92 грн</p>
+                        <p class="ingredient_weight">130 гр</p>
+                    </div>
+                    <div id="m18" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/tiger_shrimp.png">
+                        <p class="ingredient_name">креветки тигрові</p>
+                        <p class="ingredient_price">92 грн</p>
+                        <p class="ingredient_weight">70 гр</p>
+                    </div>
+                </div>
+                <div id="herbs">
+                    <p id="p10">Овочі фрукти та гриби</p>
+                    <div id="h1" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/fresh_tomatoes.png">
+                        <p class="ingredient_name">томати свіжі</p>
+                        <p class="ingredient_price">22 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="h2" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/cherry_tomatoes.png">
+                        <p class="ingredient_name">томати чері</p>
+                        <p class="ingredient_price">24 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="h3" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/coocked_tomatoes.png">
+                        <p class="ingredient_name">томати в’ялені</p>
+                        <p class="ingredient_price">24 грн</p>
+                        <p class="ingredient_weight">20 гр</p>
+                    </div>
+                    <div id="h4" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/corn.png">
+                        <p class="ingredient_name">кукурудза</p>
+                        <p class="ingredient_price">18 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="h5" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/pecherytsi.png">
+                        <p class="ingredient_name">печериці</p>
+                        <p class="ingredient_price">18 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="h6" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/maslyny.png">
+                        <p class="ingredient_name">маслини</p>
+                        <p class="ingredient_price">22 грн</p>
+                        <p class="ingredient_weight">25 гр</p>
+                    </div>
+                    <div id="h7" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/olives.png">
+                        <p class="ingredient_name">оливки</p>
+                        <p class="ingredient_price">22 грн</p>
+                        <p class="ingredient_weight">25 гр</p>
+                    </div>
+                    <div id="h8" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/pineapples.png">
+                        <p class="ingredient_name">ананаси</p>
+                        <p class="ingredient_price">24 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="h9" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/marynated_cucumber.png">
+                        <p class="ingredient_name">огірки мариновані</p>
+                        <p class="ingredient_price">18 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="h10" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/red_onion.png">
+                        <p class="ingredient_name">цибуля червона</p>
+                        <p class="ingredient_price">18 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="h11" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/green_onion.png">
+                        <p class="ingredient_name">цибуля зелена</p>
+                        <p class="ingredient_price">18 грн</p>
+                        <p class="ingredient_weight">20 гр</p>
+                    </div>
+                    <div id="h12" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/chasnyk.png">
+                        <p class="ingredient_name">часник</p>
+                        <p class="ingredient_price">18 грн</p>
+                        <p class="ingredient_weight">10 гр</p>
+                    </div>
+                    <div id="h13" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/bell_pepper.png">
+                        <p class="ingredient_name">перець болгарський</p>
+                        <p class="ingredient_price">24 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="h14" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/marynated_pepperoni_pepper.jpg">
+                        <p class="ingredient_name">перець пепероні маринований (пікантний)</p>
+                        <p class="ingredient_price">24 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="h15" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/chilie_pepper.png">
+                        <p class="ingredient_name">перець чилі маринований (гострий)</p>
+                        <p class="ingredient_price">24 грн</p>
+                        <p class="ingredient_weight">20 гр</p>
+                    </div>
+                    <div id="h16" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/rukola.png">
+                        <p class="ingredient_name">рукола</p>
+                        <p class="ingredient_price">24 грн</p>
+                        <p class="ingredient_weight">20 гр</p>
+                    </div>
+                    <div id="h17" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/shpinat_chasnyk.jpg">
+                        <p class="ingredient_name">шпинат з часником</p>
+                        <p class="ingredient_price">32 грн</p>
+                        <p class="ingredient_weight">50 гр</p>
+                    </div>
+                    <div id="h18" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/salad_mix.png">
+                        <p class="ingredient_name">мікс салатів</p>
+                        <p class="ingredient_price">34 грн</p>
+                        <p class="ingredient_weight">40 гр</p>
+                    </div>
+                    <div id="h19" class="ingredient">
+                        <div class="outline"></div>
+                        <img class="ingredient_img" src="img/krip.png">
+                        <p class="ingredient_name">кріп</p>
+                        <p class="ingredient_price">18 грн</p>
+                        <p class="ingredient_weight">10 гр</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="p11">Якщо в меню піцерії не знаходите улюблену піцу, або закортіла соковита італійська піца, а пекти не вмієте, сконструюйте її власноруч. Підберіть на конструкторі піци улюблені інгредієнти в бажаних пропорціях. Додайте в піцу соус до смаку. Замовляйте і чекайте доставку (як правило, протягом години).</p>
+        <p id="p12">Види піци, які найчастіше «готують» на конструкторі наші клієнти</p>
+        <ul id="ul1">
+            <li>піца з сиром і мисливською ковбасою</li>
+            <li>піца з куркою</li>
+            <li>піца з помідорами</li>
+            <li>xпісна піца з грибами</li>
+        </ul>
+        <p id="p13">Втілюйте на конструкторі в життя улюблений рецепт італійської піци, яку вдома без спеціального кухонного обладнання приготувати неможливо.
+        Приготування піци онлайн полегшує життя. Тому вперед!</p>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21170.77518107579!2d22.7050487!3d48.4498733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4739ab874a657b73%3A0x2d4bddd863cbe55c!2sParadiso%20resto%20pizza!5e0!3m2!1sru!2sua!4v1758129884904!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+</body>
+</html>
