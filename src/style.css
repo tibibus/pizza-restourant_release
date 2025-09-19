@@ -1,3 +1,11 @@
+.selected {
+    border: 10px solid #ff9800;
+    background-color: #f86161;
+    box-shadow: 0 0 10px #ff980044;
+}
+body {
+    overflow-x: hidden;
+}
 #header_p{
     font-family: 'Julee';
     font-weight: 400;
@@ -20,7 +28,7 @@
 }
 #title_bg{
     z-index: -1;
-    width: 131%;
+    width: 132%;
 }
 #p1{
     position: absolute;
@@ -53,7 +61,7 @@
     position: absolute;
     width: 326px;
     height: 51px;
-    left: 55%;
+    left: 43%;
     top: 850px;
     font-family: 'Days One';
     font-style: normal;
@@ -65,7 +73,7 @@
     position: absolute;
     width: 805px;
     height: 57px;
-    left: 43%;
+    left: 30%;
     top: 950px;
     font-family: 'Days One';
     font-style: normal;
@@ -78,7 +86,7 @@
     position: absolute;
     width: 223px;
     height: 41px;
-    left: 40%;
+    left: 28%;
     top: 1000px;
     font-family: 'Days One';
     font-style: normal;
@@ -90,7 +98,7 @@
     position: absolute;
     width: 151px;
     height: 41px;
-    left: 74%;
+    left: 62%;
     top: 1000px;
     font-family: 'Days One';
     font-style: normal;
@@ -124,18 +132,42 @@
     font-size: 20px;
     line-height: 25px;
 }
+#p9{
+    position: absolute;
+    width: 160px;
+    height: 26px;
+    left: 370px;
+    top: 310px;
+    font-family: 'Days One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+#p10{
+    position: absolute;
+    width: 250px;
+    height: 26px;
+    left: 330px;
+    top: 740px;
+    font-family: 'Days One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
 #check1{
     position: absolute;
     width: 21.92px;
     height: 21px;
-    left:40%;
+    left:28%;
     top: 1100px;
 }
 #label1{
     position: absolute;
     width: 191.01px;
     height: 27px;
-    left: 42%;
+    left: 30%;
     top:1101px;
     font-family: 'Days One';
     font-style: normal;
@@ -147,14 +179,14 @@
     position: absolute;
     width: 21.92px;
     height: 21px;
-    left:40%;
+    left:28%;
     top: 1140px;
 }
 #label2{
     position: absolute;
     width: 191.01px;
     height: 27px;
-    left: 42%;
+    left: 30%;
     top:1141px;
     font-family: 'Days One';
     font-style: normal;
@@ -166,14 +198,14 @@
     position: absolute;
     width: 21.92px;
     height: 21px;
-    left:70%;
+    left:58%;
     top: 1100px;
 }
 #label3{
     position: absolute;
     width: 191.01px;
     height: 27px;
-    left: 72%;
+    left: 60%;
     top:1101px;
     font-family: 'Days One';
     font-style: normal;
@@ -185,14 +217,14 @@
     position: absolute;
     width: 21.92px;
     height: 21px;
-    left:70%;
+    left:58%;
     top: 1140px;
 }
 #label4{
     position: absolute;
     width: 300px;
     height: 27px;
-    left: 72%;
+    left: 60%;
     top:1141px;
     font-family: 'Days One';
     font-style: normal;
@@ -204,14 +236,14 @@
     position: absolute;
     width: 21.92px;
     height: 21px;
-    left:70%;
+    left:58%;
     top: 1180px;
 }
 #label5{
     position: absolute;
     width: 191.01px;
     height: 27px;
-    left: 72%;
+    left: 60%;
     top:1181px;
     font-family: 'Days One';
     font-style: normal;
@@ -228,9 +260,11 @@
     border-radius: 25px;
 }
 #ingredients{
-    position: absolute;
-    left:40%;
-    top:1300px;
+    position: relative;
+    left:28%;
+    top:500px;
+    display:flex;
+    justify-content: space-between;
 
 }
 .ingredient{
@@ -251,23 +285,258 @@
     border-radius: 15px;
 }
 .ingredient_name{
+    text-align:center;
     position:absolute;
-    width:125px;
+    width:175px;
     top:40px;
-    left:-30px
-
+    left:-55px
 }
 .ingredient_price{
+    color:green;
     position:absolute;
     width:60px;
     left:45px;
     top:-15px;
     background-color: #FFFFFF;
+    border-radius:20px;
 }
 .ingredient_weight{
+    color:red;
     position:absolute;
     width:60px;
     left:45px;
     top:15px;
     background-color: #FFFFFF;
+    border-radius:20px;
+}
+#ch2{
+    left:160px;
+}
+#ch3{
+    left:320px;
+}
+#ch4{
+    left:480px;
+}
+#ch5{
+    left:640px;
+}
+#ch6{
+    left:800px;
+}
+#ch7{
+    left:420px;
+    top:220px;
+}
+#m1{
+    top:400px;
+    left:0px;
+}
+#m2{
+    top:400px;
+    left:160px;
+}
+#m3{
+    top:400px;
+    left:320px;
+}
+#m4{
+    top:400px;
+    left:480px;
+}
+#m5{
+    top:400px;
+    left:640px;
+}
+#m6{
+    top:400px;
+    left:800px;
+}
+#m7{
+    top:500px;
+    left:0px;
+}
+#m8{
+    top:500px;
+    left:160px;
+}
+#m9{
+    top:500px;
+    left:320px;
+}
+#m10{
+    top:500px;
+    left:480px;
+}
+#m11{
+    top:500px;
+    left:640px;
+}
+#m12{
+    top:500px;
+    left:800px;
+}
+#m13{
+    top:600px;
+    left:0px;
+}
+#m14{
+    top:600px;
+    left:160px;
+}
+#m15{
+    top:600px;
+    left:320px;
+}
+#m16{
+    top:600px;
+    left:480px;
+}
+#m17{
+    top:600px;
+    left:640px;
+}
+#m18{
+    top:600px;
+    left:800px;
+}
+#h1{
+    top:830px;
+    left:0px;
+}
+#h2{
+    top:830px;
+    left:160px;
+}
+#h3{
+    top:830px;
+    left:320px;
+}
+#h4{
+    top:830px;
+    left:480px;
+}
+#h5{
+    top:830px;
+    left:640px;
+}
+#h6{
+    top:830px;
+    left:800px;
+}
+#h7{
+    top:930px;
+    left:0px;
+}
+#h8{
+    top:930px;
+    left:160px;
+}
+#h9{
+    top:930px;
+    left:320px;
+}
+#h10{
+    top:930px;
+    left:480px;
+}
+#h11{
+    top:930px;
+    left:640px;
+}
+#h12{
+    top:930px;
+    left:800px;
+}
+#h13{
+    top:1030px;
+    left:0px;
+}
+#h14{
+    top:1030px;
+    left:160px;
+}
+#h15{
+    top:1030px;
+    left:320px;
+}
+#h16{
+    top:1030px;
+    left:480px;
+}
+#h17{
+    top:1030px;
+    left:640px;
+}
+#h18{
+    top:1030px;
+    left:800px;
+}
+#h19{
+    top:1180px;
+    left:400px;
+}
+footer{
+    background-color: #535151;
+    color: white;
+    position:absolute;
+    width: 100%;
+    top:3000px;
+    height: 380px;
+}
+#map{
+    position: absolute;
+    width: 600px;
+    height: 350px;
+    left: 1285px;
+    top: 15px;
+}
+#p11, #p12, #p13{
+    padding:5px;
+    padding-left:20px;
+    width:1000px;
+    font-size:20px;
+}
+#p12{
+    font-size:24px;
+}
+#ul1{
+    font-size:20px;
+    padding-left:70px;
+}
+#price{
+    color: white;
+    font-size:20px;
+    position:absolute;
+    top: 2600px;
+    left:800px;
+    border-radius:1000px;
+    background-color: red;
+    padding:10px;
+}
+#reset_ingredients{
+    position: absolute;
+    top:2620px;
+    left:1000px;
+    padding:10px;
+    font-size:20px;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-bottom:10px;
+}
+#ingredient_list{
+    position:absolute;
+    top: 2700px;
+    left:100px;
+    text-align: center;
+    width:90%;
+    font-family: 'Days One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 41px;
+    text-align: center;
 }
